@@ -11,7 +11,7 @@ export const actionCreators = {
   decrement: createAction(CounterActionTypes.DECREMENT)
 };
 
-type CounterAction = ActionType<typeof actionCreators>;
+export type CounterAction = ActionType<typeof actionCreators>;
 
 export interface CounterState {
   value: number;
